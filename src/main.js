@@ -4,13 +4,13 @@
 import DefaultLayout from '~/layouts/Default.vue';
 import Buefy from 'buefy';
 import 'buefy/dist/buefy.css';
-import '~/assets/style.scss';
+import '~/styles/style.scss';
 
 export default function (Vue, { router, head, isClient }) {
   // Import google fonts
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap',
+    href: 'https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Open+Sans&display=swap',
   });
 
   // Import buefy

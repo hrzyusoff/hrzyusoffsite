@@ -1,6 +1,15 @@
 <template>
   <Layout>
     <div class="container">
+      <!-- <div class="header-wrapper">
+        <button 
+          class="button mode-toggle"
+          :class="{'is-active': isNightMode}"
+          @click="isNightMode = !isNightMode"
+        >
+          <img src="@/assets/moon.svg" alt="Moon Icon">
+        </button>
+      </div> -->
       <div class="content-wrapper">
         <div class="title-block">
           <h1 class="has-text-weight-bold">
@@ -21,10 +30,42 @@ export default {
   metaInfo: {
     title: 'hrzyusoff | Personal Website',
   },
+  data() {
+    return {
+      isNightMode: false,
+    };
+  },
 };
 </script>
 
 <style lang="scss" scoped>
+.header-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.mode-toggle {
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  border: 1px solid #354e67;
+  outline: none;
+
+  &:hover {
+    background-color: #f1c40f44;
+  }
+
+  &.is-active {
+    background-color: #f1c40f;
+  }
+}
+
 .content-wrapper,
 .footer-wrapper {
   display: flex;
@@ -46,6 +87,10 @@ export default {
   .quote-size {
     font-size: 34px;
   }
+}
+
+.header-wrapper {
+  height: 10vh;
 }
 
 .content-wrapper {
