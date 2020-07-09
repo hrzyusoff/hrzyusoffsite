@@ -6,7 +6,20 @@
     "develop": "gridsome develop",
     "explore": "gridsome explore"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged --write \"src/**/*.{vue,js,scss}\""
+    }
+  },
   "dependencies": {
-    "gridsome": "^0.7.0"
+    "buefy": "^0.8.20",
+    "gridsome": "^0.7.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^9.0.2"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "prettier": "2.0.5",
+    "pretty-quick": "^2.0.1"
   }
 }
