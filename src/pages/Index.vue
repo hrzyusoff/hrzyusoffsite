@@ -29,7 +29,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 0 40px;
 }
 
 .credit-block,
@@ -38,10 +38,11 @@ export default {
 }
 
 .content-wrapper {
-  height: 95vh;
+  height: 90vh;
 }
 
 .footer-wrapper {
-  height: 5vh;
+  font-size: 12px;
+  height: 10vh;
 }
 </style>
