@@ -4,7 +4,8 @@
       <div class="content-wrapper">
         <div class="title-block">
           <h1 class="has-text-weight-bold">
-            "Rome tidak terbina dalam masa satu hari, begitu juga dengan website ini."
+            <span class="quote-size">"&nbsp;</span>Rome tidak terbina dalam masa satu hari, begitu
+            juga dengan website ini.<span class="quote-size">&nbsp;"</span>
           </h1>
         </div>
       </div>
@@ -35,6 +36,16 @@ export default {
 .credit-block,
 .title-block {
   text-align: center;
+}
+
+.title-block {
+  h1 {
+    font-family: Caveat;
+    font-size: 24px;
+  }
+  .quote-size {
+    font-size: 34px;
+  }
 }
 
 .content-wrapper {
