@@ -1,15 +1,15 @@
 <template>
   <Layout>
     <div class="container">
-      <!-- <div class="header-wrapper">
-        <button 
+      <div class="header-wrapper">
+        <button
           class="button mode-toggle"
-          :class="{'is-active': isNightMode}"
+          :class="{ 'is-active': isNightMode }"
           @click="isNightMode = !isNightMode"
         >
-          <img src="@/assets/moon.svg" alt="Moon Icon">
+          <img src="@/assets/moon.svg" alt="Moon Icon" />
         </button>
-      </div> -->
+      </div>
       <div class="content-wrapper">
         <div class="title-block">
           <h1 class="has-text-weight-bold">
@@ -94,7 +94,7 @@ button:focus {
 }
 
 .content-wrapper {
-  height: 90vh;
+  height: 80vh;
 }
 
 .footer-wrapper {
