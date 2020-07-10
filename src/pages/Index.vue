@@ -11,6 +11,9 @@
         </button>
       </div>
       <div class="content-wrapper">
+        <div class="icon-block">
+          <img src="@/assets/rome.svg" alt="Rome Icon" />
+        </div>
         <div class="title-block">
           <h1 class="has-text-weight-bold">
             <span class="quote-size">"&nbsp;</span>Rome tidak terbina dalam masa satu hari, begitu
@@ -43,6 +46,7 @@ export default {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding: 20px 20px 0 20px;
 }
 
 button:focus {
@@ -56,10 +60,6 @@ button:focus {
   border-radius: 25px;
   border: 1px solid #354e67;
   outline: none;
-
-  &:hover {
-    background-color: #f1c40f44;
-  }
 
   &.is-active {
     background-color: #f1c40f;
