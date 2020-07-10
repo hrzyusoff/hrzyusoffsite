@@ -4,7 +4,7 @@ This is just my personal website created using Gridsome, static page generator f
 
 ### Want to playaround ?
 
-1. Fork this repo
+1. Clone this repo
 2. If you haven't install gridsome, do `yarn global add @gridsome/cli`
 3. `cd hrzyusoffsite` do `yarn install`
 4. `gridsome develop` to start a local dev server at `http://localhost:8080`
