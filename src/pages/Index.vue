@@ -14,8 +14,8 @@
         <div class="title-block">
           <h1 class="has-text-weight-bold">
             <!-- EN -->
-            <span class="quote-size">"&nbsp;</span>Rome wasn't built in a day, this website
-            too...<span class="quote-size">&nbsp;"</span>
+            <span class="quote-size">"&nbsp;</span>Rome wasn't built in a day, <br />
+            this website too...<span class="quote-size">&nbsp;"</span>
             <!-- MY -->
             <!-- <span class="quote-size">"&nbsp;</span>Rome tidak terbina dalam masa satu hari, begitu
             juga dengan website ini.<span class="quote-size">&nbsp;"</span> -->
@@ -35,7 +35,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'hrzyusoff | Personal Website',
+    title: 'Home',
   },
   data() {
     return {
