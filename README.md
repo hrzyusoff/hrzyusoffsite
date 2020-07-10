@@ -1,14 +1,11 @@
-# Default starter for Gridsome
+### About this repo
 
-This is the project you get when you run `gridsome create new-project`.
+This is just my personal website created using Gridsome, static page generator for Vue and deployed to Netlify.
 
-### 1. Install Gridsome CLI tool if you don't have
+### Want to playaround ?
 
-`npm install --global @gridsome/cli`
-
-### 2. Create a Gridsome project
-
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+1. Fork this repo
+2. If you haven't install gridsome, do `yarn global add @gridsome/cli`
+3. `cd hrzyusoffsite` do `yarn install`
+4. `gridsome develop` to start a local dev server at `http://localhost:8080`
+5. Tahniah ! Selamat mencuba 🥂
