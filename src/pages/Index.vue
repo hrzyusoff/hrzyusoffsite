@@ -11,9 +11,6 @@
         </button>
       </div>
       <div class="content-wrapper">
-        <div class="icon-block">
-          <img src="@/assets/rome.svg" alt="Rome Icon" />
-        </div>
         <div class="title-block">
           <h1 class="has-text-weight-bold">
             <span class="quote-size">"&nbsp;</span>Rome tidak terbina dalam masa satu hari, begitu
