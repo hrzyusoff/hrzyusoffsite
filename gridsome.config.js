@@ -6,5 +6,12 @@
 
 module.exports = {
   siteName: 'hrzyusoff | Personal Website',
-  plugins: [],
+  plugins: [
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-125433386-1',
+      },
+    },
+  ],
 };
