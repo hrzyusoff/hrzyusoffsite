@@ -4,8 +4,8 @@
       <div class="header-wrapper">
         <button
           class="button mode-toggle"
-          :class="{ 'is-active': isNightMode }"
-          @click="isNightMode = !isNightMode"
+          :class="{ 'is-active': !isButtonDarkMode }"
+          @click="toggleDarkMode()"
         >
           <img src="@/assets/moon.svg" alt="Moon Icon" />
         </button>
@@ -13,13 +13,20 @@
       <div class="content-wrapper">
         <div class="title-block">
           <h1 class="has-text-weight-bold">
-            <span class="quote-size">"&nbsp;</span>Rome tidak terbina dalam masa satu hari, begitu
-            juga dengan website ini.<span class="quote-size">&nbsp;"</span>
+            <!-- EN -->
+            <span class="quote-size">"&nbsp;</span>Rome wasn't built in a day, this website
+            too...<span class="quote-size">&nbsp;"</span>
+            <!-- MY -->
+            <!-- <span class="quote-size">"&nbsp;</span>Rome tidak terbina dalam masa satu hari, begitu
+            juga dengan website ini.<span class="quote-size">&nbsp;"</span> -->
           </h1>
         </div>
       </div>
       <div class="footer-wrapper">
-        <label class="credit-block">Hak cipta terpelihara © 2020 Hariz Yusoff</label>
+        <!-- EN -->
+        <label class="credit-block">© 2020 Hariz Yusoff. All Rights Reserved</label>
+        <!-- MY -->
+        <!-- <label class="credit-block">Hak cipta terpelihara © 2020 Hariz Yusoff</label> -->
       </div>
     </div>
   </Layout>
@@ -32,8 +39,16 @@ export default {
   },
   data() {
     return {
-      isNightMode: false,
+      isButtonDarkMode: false,
     };
+  },
+  methods: {
+    toggleDarkMode() {
+      this.$store.commit('changeMode');
+      this.isButtonDarkMode = !this.isButtonDarkMode;
+      console.log(this.$store.state.isDarkMode);
+      console.log('Dark Mode Toggled');
+    },
   },
 };
 </script>
@@ -46,8 +61,10 @@ export default {
   padding: 20px 20px 0 20px;
 }
 
+button,
 button:focus {
   outline: 0;
+  box-shadow: none;
 }
 
 .mode-toggle {
