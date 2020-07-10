@@ -1,6 +1,6 @@
 ### About this repo
 
-This is just my personal website created using Gridsome, static page generator for Vue and deployed to Netlify.
+This is just my personal website created using Gridsome, static page generator for Vue and deployed to Netlify. Do not care about formatting because this repo is equipped with Prettier and Husky 🤘🏻
 
 ### Want to playaround ?
 
