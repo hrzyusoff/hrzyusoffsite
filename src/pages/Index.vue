@@ -177,11 +177,6 @@ export default {
     padding: 0 16px;
 
     a {
-      color: #4373a4;
-      transition: 0.2s all;
-    }
-
-    a:hover {
       color: #f1c40f;
     }
   }
