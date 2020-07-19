@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'hrzyusoff | Personal Website',
+  siteName: 'Hariz Yusoff | Personal Website',
   plugins: [
     {
       use: '@gridsome/plugin-google-analytics',
