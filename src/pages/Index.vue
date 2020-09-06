@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="container">
-      <div class="header-wrapper">
+      <div class="header-wrapper" style="visibility: hidden;">
         <button
           class="button mode-toggle"
           :class="{ 'is-dark-mode-bg': !isDarkMode }"
@@ -65,6 +65,15 @@
               <font-awesome-icon :icon="['fab', 'behance']" />
             </a>
           </div>
+          <div class="social codewars">
+            <a
+              :class="{ 'is-dark-mode-link': !isDarkMode }"
+              href="https://www.codewars.com/users/hrzyusoff/completed_solutions"
+              target="_blank"
+            >
+              <font-awesome-icon :icon="['fas', 'code']" />
+            </a>
+          </div>
         </div>
       </div>
       <div class="footer-wrapper">
@@ -82,10 +91,11 @@
 <script>
 // import font awesome icons used in this component
 import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { faCodepen, faGithub, faDribbble, faBehance } from '@fortawesome/free-brands-svg-icons';
 
 // init icon
-library.add(faCodepen, faGithub, faDribbble, faBehance);
+library.add(faCodepen, faGithub, faDribbble, faBehance, faCode);
 
 export default {
   metaInfo: {

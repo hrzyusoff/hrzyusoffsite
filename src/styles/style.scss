@@ -26,6 +26,10 @@ body {
   color: #4373a4;
 }
 
+* {
+  transition: 0.5s all;
+}
+
 // dark mode class
 .is-dark-mode-bg {
   background-color: #f1c40f;
