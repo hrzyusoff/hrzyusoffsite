@@ -12,77 +12,72 @@
         </button>
       </div>
       <div class="content-wrapper">
-        <div class="coming-soon-block">
-          <h1 class="has-text-weight-bold" :class="{ 'is-dark-mode-text': !isDarkMode }">
-            Coming Soon
-          </h1>
-          <div class="divider" :class="{ 'is-dark-mode-bg': !isDarkMode }"></div>
-        </div>
         <div class="title-block">
-          <h1 class="has-text-weight-bold" :class="{ 'is-dark-mode-text': !isDarkMode }">
-            <!-- EN -->
-            <!-- <span class="quote-size">"&nbsp;</span>Rome wasn't built in a day, this website
-            too...<span class="quote-size">&nbsp;"</span> -->
-            <!-- MY -->
-            <!-- <span class="quote-size">"&nbsp;</span>Rome tidak terbina dalam masa satu hari, begitu
-            juga dengan website ini.<span class="quote-size">&nbsp;"</span> -->
-          </h1>
+          <h1 class="has-text-weight-bold" :class="{ 'is-dark-mode-text': !isDarkMode }"></h1>
         </div>
+        <!-- TODO: Refactor -->
         <div class="social-media-block">
           <div class="social codepen">
-            <a
-              :class="{ 'is-dark-mode-link': !isDarkMode }"
-              href="https://www.codepen.io/hrzyusoff"
-              target="_blank"
-            >
-              <font-awesome-icon :icon="['fab', 'codepen']" />
-            </a>
+            <b-tooltip label="Codepen" :delay="customDelay" :animated="isAnimated">
+              <a
+                :class="{ 'is-dark-mode-link': !isDarkMode }"
+                href="https://www.codepen.io/hrzyusoff"
+                target="_blank"
+              >
+                <font-awesome-icon :icon="['fab', 'codepen']" />
+              </a>
+            </b-tooltip>
           </div>
           <div class="social github">
-            <a
-              :class="{ 'is-dark-mode-link': !isDarkMode }"
-              href="https://www.github.com/hrzyusoff"
-              target="_blank"
-            >
-              <font-awesome-icon :icon="['fab', 'github']" />
-            </a>
+            <b-tooltip label="Github" :delay="customDelay" :animated="isAnimated">
+              <a
+                :class="{ 'is-dark-mode-link': !isDarkMode }"
+                href="https://www.github.com/hrzyusoff"
+                target="_blank"
+              >
+                <font-awesome-icon :icon="['fab', 'github']" />
+              </a>
+            </b-tooltip>
           </div>
           <div class="social dribbble">
-            <a
-              :class="{ 'is-dark-mode-link': !isDarkMode }"
-              href="https://www.dribbble.com/hrzyusoff"
-              target="_blank"
-            >
-              <font-awesome-icon :icon="['fab', 'dribbble']" />
-            </a>
+            <b-tooltip label="Dribbble" :delay="customDelay" :animated="isAnimated">
+              <a
+                :class="{ 'is-dark-mode-link': !isDarkMode }"
+                href="https://www.dribbble.com/hrzyusoff"
+                target="_blank"
+              >
+                <font-awesome-icon :icon="['fab', 'dribbble']" />
+              </a>
+            </b-tooltip>
           </div>
           <div class="social behance">
-            <a
-              :class="{ 'is-dark-mode-link': !isDarkMode }"
-              href="https://www.behance.net/hrzyusoff"
-              target="_blank"
-            >
-              <font-awesome-icon :icon="['fab', 'behance']" />
-            </a>
+            <b-tooltip label="Behance" :delay="customDelay" :animated="isAnimated">
+              <a
+                :class="{ 'is-dark-mode-link': !isDarkMode }"
+                href="https://www.behance.net/hrzyusoff"
+                target="_blank"
+              >
+                <font-awesome-icon :icon="['fab', 'behance']" />
+              </a>
+            </b-tooltip>
           </div>
           <div class="social codewars">
-            <a
-              :class="{ 'is-dark-mode-link': !isDarkMode }"
-              href="https://www.codewars.com/users/hrzyusoff/completed_solutions"
-              target="_blank"
-            >
-              <font-awesome-icon :icon="['fas', 'code']" />
-            </a>
+            <b-tooltip label="Codewars" :delay="customDelay" :animated="isAnimated">
+              <a
+                :class="{ 'is-dark-mode-link': !isDarkMode }"
+                href="https://www.codewars.com/users/hrzyusoff/completed_solutions"
+                target="_blank"
+              >
+                <font-awesome-icon :icon="['fas', 'code']" />
+              </a>
+            </b-tooltip>
           </div>
         </div>
       </div>
       <div class="footer-wrapper">
-        <!-- EN -->
         <label class="credit-block" :class="{ 'is-dark-mode-text': !isDarkMode }"
           >© {{ getCurrentYear }} Hariz Yusoff. All Rights Reserved</label
         >
-        <!-- MY -->
-        <!-- <label class="credit-block">Hak cipta terpelihara © 2020 Hariz Yusoff</label> -->
       </div>
     </div>
   </Layout>
@@ -104,6 +99,8 @@ export default {
   data() {
     return {
       isDarkMode: false,
+      customDelay: 500,
+      isAnimated: true,
     };
   },
   computed: {
@@ -205,9 +202,8 @@ export default {
     font-size: 24px;
     padding: 0 16px;
 
-    a {
+    a:hover {
       color: #4373a4;
-      transition: none;
     }
 
     a {
