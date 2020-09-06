@@ -27,5 +27,14 @@ body {
 }
 
 * {
-  transition: 0.2s all;
+  transition: 0.4s all;
+}
+
+// dark mode class
+.is-dark-mode-bg {
+  background-color: #f1c40f;
+}
+
+.is-dark-mode-text {
+  color: #f1c40f;
 }

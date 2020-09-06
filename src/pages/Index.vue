@@ -16,7 +16,7 @@
           <h1 class="has-text-weight-bold" :class="{ 'is-dark-mode-text': !isDarkMode }">
             Coming Soon
           </h1>
-          <div class="divider"></div>
+          <div class="divider" :class="{ 'is-dark-mode-bg': !isDarkMode }"></div>
         </div>
         <div class="title-block">
           <h1 class="has-text-weight-bold" :class="{ 'is-dark-mode-text': !isDarkMode }">
@@ -70,7 +70,7 @@
       <div class="footer-wrapper">
         <!-- EN -->
         <label class="credit-block" :class="{ 'is-dark-mode-text': !isDarkMode }"
-          >© 2020 Hariz Yusoff. All Rights Reserved</label
+          >© {{ getCurrentYear }} Hariz Yusoff. All Rights Reserved</label
         >
         <!-- MY -->
         <!-- <label class="credit-block">Hak cipta terpelihara © 2020 Hariz Yusoff</label> -->
@@ -96,6 +96,12 @@ export default {
       isDarkMode: false,
     };
   },
+  computed: {
+    getCurrentYear() {
+      let year = new Date();
+      return year.getFullYear();
+    },
+  },
   methods: {
     toggleDarkMode() {
       this.$store.commit('changeMode');
@@ -110,7 +116,7 @@ export default {
 .divider {
   height: 3px;
   margin-top: 6px;
-  background-color: #f1c40f;
+  background-color: #4373a4;
 }
 
 // general styling
