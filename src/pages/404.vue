@@ -40,7 +40,7 @@ export default {
   }
 
   img {
-    width: 15%;
+    width: 180px;
     margin-bottom: 24px;
   }
 
